@@ -21,6 +21,11 @@ This example demonstrates a simple school management system using Sequelize with
    - **Relationships:**
      - Each `Student` belongs to one `Classroom`. This relationship signifies the association between students and the classrooms in which they study.
 
+4. **Subject**
+    - A `Subject` represents a specific area of study or course.
+    - **Relationships:**
+      - A `Subject` can be associated with multiple `Classrooms`. This relationship allows subjects to be taught in multiple classrooms across different schools.
+
 ### How Relationships Work
 
 - When a new `School` is created, it can have zero or more associated `Classrooms`. This allows for the management of multiple classrooms under a single school entity.
